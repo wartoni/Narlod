@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
+import { X, MessageCircle } from "lucide-react"
 
 export default function NarlodHomePage() {
   return (
@@ -63,13 +64,26 @@ export default function NarlodHomePage() {
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4">
                 Buy NARLOD
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-foreground text-lg px-8 py-4 bg-transparent"
+            </div>
+            <div className="flex justify-center gap-6 mt-8">
+              <a
+                href="https://t.me/narlodonbase"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="Telegram"
               >
-                Learn More
-              </Button>
+                <MessageCircle size={32} />
+              </a>
+              <a
+                href="https://x.com/narlodonbase"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <X size={32} />
+              </a>
             </div>
           </div>
         </div>
